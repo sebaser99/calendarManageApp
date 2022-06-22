@@ -7,10 +7,9 @@ import { useForm } from '../../hooks/useForm';
 import '../../style/login.css';
 
 export const RegisterScreen = () => {
+    const navigate = useNavigate()
     const dispatch = useDispatch()
-    if(process.env.NODE_ENV !== 'test'){
-        const navigate = useNavigate()
-    }
+    
     const [registerFormValues, handleInputChange] = useForm({
         rEmail: "sebaser99@hotmail.com", 
         rName: "Alex Rodriguez", 

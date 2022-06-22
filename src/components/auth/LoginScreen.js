@@ -7,14 +7,11 @@ import '../../style/login.css';
 
 export const LoginScreen = () => {
     const dispatch = useDispatch()
-    if(process.env.NODE_ENV !== 'test'){
-        const navigate = useNavigate()
-    }
-    
+    const navigate = useNavigate()  
 
     const [formValue, handleChangeInput]= useForm({
-        lEmail: " ",
-        lPassword: " "
+        lEmail: "",
+        lPassword: ""
     })
     const {lEmail, lPassword} = formValue
 
