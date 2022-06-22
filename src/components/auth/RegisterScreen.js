@@ -8,7 +8,9 @@ import '../../style/login.css';
 
 export const RegisterScreen = () => {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
+    if(process.env.NODE_ENV !== 'test'){
+        const navigate = useNavigate()
+    }
     const [registerFormValues, handleInputChange] = useForm({
         rEmail: "sebaser99@hotmail.com", 
         rName: "Alex Rodriguez", 
@@ -26,7 +28,10 @@ export const RegisterScreen = () => {
 
     }
     const handleBack = () => {
-        navigate(-1)
+        if(process.env.NODE_ENV !== 'test'){
+            navigate(-1)
+        }
+        
     }
   return (
     <div className="container login-container">

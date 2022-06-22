@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vamos a probar el <LoginScreen/> debe hacer match con el snapshot 1`] = `
+<div
+  className="container login-container"
+>
+  <div
+    className="col-md-6 login-form-1"
+  >
+    <h3>
+      Ingreso
+    </h3>
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <input
+          className="form-control"
+          name="lEmail"
+          onChange={[Function]}
+          placeholder="Correo"
+          type="text"
+          value=" "
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <input
+          className="form-control"
+          name="lPassword"
+          onChange={[Function]}
+          placeholder="Contraseña"
+          type="password"
+          value=" "
+        />
+      </div>
+      <div
+        className="form-group"
+      >
+        <input
+          className="btnSubmit"
+          type="submit"
+          value="Login"
+        />
+      </div>
+    </form>
+    <div
+      className="px-5 overline"
+      onClick={[Function]}
+    >
+      Create a new Account
+    </div>
+  </div>
+</div>
+`;

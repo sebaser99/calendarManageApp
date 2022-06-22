@@ -7,11 +7,14 @@ import '../../style/login.css';
 
 export const LoginScreen = () => {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
+    if(process.env.NODE_ENV !== 'test'){
+        const navigate = useNavigate()
+    }
+    
 
     const [formValue, handleChangeInput]= useForm({
-        lEmail: "sebaser99@yahoo.com",
-        lPassword: "1234567"
+        lEmail: " ",
+        lPassword: " "
     })
     const {lEmail, lPassword} = formValue
 
@@ -20,7 +23,10 @@ export const LoginScreen = () => {
         dispatch(startLogin(lEmail, lPassword))
     }
     const handleNewAccount = ()=> {
-        navigate('/auth/register')
+        if(process.env.NODE_ENV !== 'test'){
+            navigate('/auth/register')
+        }
+        
     }
 
   return (

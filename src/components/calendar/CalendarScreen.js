@@ -73,7 +73,7 @@ export const CalendarScreen = () => {
     return {style}
   }
   return (
-      <>
+      <div className='calendar-screen'>
         <Navbar />
         <div className='container'>
 
@@ -101,6 +101,6 @@ export const CalendarScreen = () => {
         }
         <CalendarModal />
         </div>
-      </>
+      </div>
     );
 };
